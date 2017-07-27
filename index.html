@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        body,div,li,ol,p,td,th,ul{margin:0;padding:0}
+        li{list-style:none}img{border:0;-webkit-user-select:none;user-select:none;-webkit-touch-callout:none;touch-callout:none}table{border-spacing:0;border-collapse:collapse}html{font-family:sans-serif;-webkit-user-select:none;user-select:none;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}:focus{outline:0}:link,:visited{text-decoration:none}a:active,a:hover{outline:0}.clearfix:after{display:block;clear:both;height:0;font-size:0;content:''}.pull-left{float:left}.pull-right{float:right}.show{display:block!important}.hide{display:none!important}.visible{visibility:visible}.invisible{visibility:hidden}.text-left{text-align:left}.text-center{text-align:center}.text-right{text-align:right}.dv{display:inline-block;vertical-align:middle}.di{display:inline-block}.text-hide{border:0;background-color:transparent;font:0/0 a;color:transparent;text-shadow:none}.text-ellipsis{overflow:hidden;white-space:nowrap;text-overflow:ellipsis}.btn{display:inline-block;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;text-align:center;vertical-align:middle;white-space:nowrap;-webkit-tap-highlight-color:transparent}.btn:hover{text-decoration:none}
+    </style>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./library/hotcss.js"></script>
+</head>
+<body>
+<div id="box">
+    <div id="box_two">
+        <div class="header">
+            <img />
+            <div class="small_box">
+                <div></div>
+                <div></div>
+            </div>
+            <div>已获勋章</div>
+            <div></div>
+        </div>
+        <div class="body">
+            <div class="logo">
+                <!-- <span>你今天可以扭XX次</span>-->
+                <span>
+                        <span>01</span>
+                        <span>02</span>
+                        <span>03</span>
+                    </span>
+                <div class="why" onclick="new Ruler('ruler').add({text:'123,123<br/>11111111111'});"></div>
+            </div>
+            <div id="ball_body">
+                <img src="images/egg/ballbg.png" />
+            </div>
+            <div class="ball_bottom">
+                <div class="ball_btn" onclick="moveChange()"></div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="number">
+                <div onclick="new Present('present').add({type:'blue',text:'123',process:'1/3'})">1/2</div>
+                <div onclick="new Present('present').add({type:'green',text:'123',process:'1/3'})">2/3</div>
+                <div onclick="new Present('present').add({type:'red',text:'123',process:'1/3'})">3/4</div>
+                <div onclick="new Present('present').add({type:'purple',text:'123',process:'1/3'})">4/5</div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="./library/jquery.min.js"></script>
+<script src="./js.js"></script>
+</body>
+</html>

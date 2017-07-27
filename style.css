@@ -1,0 +1,478 @@
+#box{
+    width: 100vw;
+    height:100vh;
+}
+#box_two{
+    background: url("./images/egg/big-bg.png") repeat center;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column wrap;
+}
+#box_two>.header{
+    width: 90%;
+    height: 10%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    margin: auto;
+    border-radius: 2rem;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-around;
+    background-image: linear-gradient(to bottom,#E1BF68,#A35F1F);
+    box-shadow: grey 0 0 1rem;
+}
+#box_two>.header>div:last-child{
+    width: 44%;
+    height: 1.5rem;
+    background-color:#613D1B;
+    border-radius: 0.75rem;
+    display: flex;
+    flex-flow: nowrap row;
+}
+#box_two>.header>div:last-child>div{
+    width: 20%;
+    height: 100%;
+}
+#box_two>.header>img{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: black;
+}
+#box_two>.header>div:nth-child(2){
+    width: 25%;
+    height: 2rem;
+    display: flex;
+    flex-flow:column wrap;
+}
+#box_two>.header>div:nth-child(3){
+    width: 10%;
+    color: #613D1B;
+    font-size: 0.6rem;
+}
+.small_box>div{
+    height: 1rem;
+    border-radius: 0.5rem;
+    width: calc(100% - 0.2rem);
+    background-color:#613D1B;
+    font-size: 0.5rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 0.2rem;
+}
+#box_two>.footer{
+    background: url("./images/egg/ball_egg.png") no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 15%;
+    position: relative;
+}
+#box_two>.body{
+    width: 100%;
+    height: 65%;
+    position: relative;
+    margin: 5% auto auto;
+}
+#ball_body{
+    width: 13rem;
+    height: 13rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 1rem auto auto;
+}
+#ball_body>img{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+}
+.ball_bottom{
+    width: 100%;
+    height: 4rem;
+    background: url("./images/egg/ball_bottom.png") no-repeat center;
+    background-size:80%;
+    margin-top: -2rem;
+}
+.ball_btn{
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 1rem auto auto;
+}
+.footer .number{
+    width: 90%;
+    margin-left: 5%;
+    height: 3rem;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: wrap row;
+}
+.footer .number>div{
+    color: #E8BB3A;
+    font-size: 0.7rem;
+    width: 20%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.body>.logo{
+    width: 80%;
+    height: 5rem;
+    background: url("images/egg/text.png") no-repeat center;
+    background-size: contain;
+    position: absolute;
+    margin-left: -40%;
+    left: 50%;
+    margin-top: -0.5rem;
+    z-index: 2;
+}
+.body>.logo>span{
+    position: absolute;
+    bottom: 0.4rem;
+    left: 50%;
+    transform: translateX(-58%);
+    color: white;
+    font-size: 0.7rem;
+}
+.body>.logo>span>span:after{
+    content: 'H';
+    font-size: 0.3rem;
+    color: white;
+    position: absolute;
+}
+.body>.logo>span>span:nth-child(2):after{
+    content: 'MIN';
+}
+.body>.logo>span>span:nth-child(3){
+    margin-left: 0.5rem;
+}
+.body>.logo>span>span:nth-child(3):after{
+    content: 'S';
+}
+.why{
+    width: 1rem;
+    height: 1rem;
+    background-color: transparent;
+    position: absolute;
+    right: 0.6rem;
+    top: 0.6rem;
+}
+.ball{
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 4.6rem;
+    margin-left: -0.1rem;
+    z-index: 3;
+    animation:ballMove 2s  ease-in-out;
+    -webkit-animation:ballMove 2s  ease-in-out;
+    background: no-repeat center;
+    background-size: cover;
+}
+@keyframes ballMove
+{
+    0% {transform: translateY(0)}
+    40% {transform: translateY(4rem);opacity: 1}
+    100%{transform: translateY(-8rem) scale(2);opacity: 0}
+}
+
+@-webkit-keyframes ballMove
+{
+    0% {transform: translateY(0)}
+    40% {transform: translateY(4rem);opacity: 1}
+    100%{transform: translateY(-8rem) scale(4);opacity: 0}
+}
+._box{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 1000;
+}
+._main{
+    width: 80%;
+    height: auto;
+    padding-bottom: 0.4rem;
+    background:url("images/eggModal/rulebottom.png") no-repeat bottom;
+    background-size: contain;
+}
+.ruler_body:before,.present_body:before,.showPresent_body:before{
+    width: 110%;
+    height: 2rem;
+    background: url("images/eggModal/ruleheader.png") no-repeat center;
+    background-size: contain;
+    content: '活动规则';
+    position: absolute;
+    text-align: center;
+    line-height: 1.5rem;
+    color: white;
+    font-size: 0.9rem;
+    margin-top: -3.2rem;
+    margin-left: -10%;
+}
+.showPresent_body:before{
+    background: url(images/eggModal/get.png) no-repeat bottom;
+    content: '我又扭到了';
+    height: 8rem;
+    margin-top: -8.5rem;
+    background-size: contain!important;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    line-height: 2.3rem;
+}
+.nothing:before{
+    background: url(images/eggModal/notGet.png) no-repeat bottom;
+    content: '什么都没扭到';
+}
+.present_body:before{
+    content: '';
+    height: 8rem;
+    margin-top: -8.5rem;
+    background-size: contain!important;
+}
+.ruler_body,.present_body,.showPresent_body{
+    background-color: white;
+    width: 90%;
+    padding-top: 1.5rem;
+    position: relative;
+    padding-right: 5%;
+    padding-left: 5%;
+    font-size: 0.6rem;
+}
+.green:before{
+    background: url("images/eggModal/boxgreen.png") no-repeat center;
+}
+.blue:before{
+    background: url("images/eggModal/boxblue.png") no-repeat center;
+}
+.red:before{
+    background: url("images/eggModal/boxred.png") no-repeat center;
+}
+.purple:before{
+    background: url("images/eggModal/boxpurple.png") no-repeat center;
+}
+._btn{
+    background-color: #E8BB3A;
+    color: white;
+    text-align: center;
+    width: 90%;
+    margin-left: 5%;
+    height: 2rem;
+    border-radius: 1rem;
+    font-size: 0.8rem;
+    line-height: 2rem;
+    margin-top: 0.8rem;
+}
+.present_select_box{
+    background-color: #377CC1;
+    color: white;
+    text-align: center;
+    width: 70%;
+    margin-left: 15%;
+    height: 1.5rem;
+    border-radius: 1rem;
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    margin-top: 0.8rem;
+}
+.present_body>div:first-child{
+    width: 100%;
+    font-size: 1rem;
+    text-align: center;
+}
+.present_body>div:nth-child(2){
+    width: 100%;
+    font-size: 1.5rem;
+    color: red;
+    text-align: center;
+    position: relative;
+}
+.present_body>div:nth-child(2):before{
+    content: '（随机抽取）';
+    font-size: 0.6rem;
+    color: grey;
+    position: absolute;
+    margin-left: -0.4rem;
+    margin-top: 1.7rem;
+}
+.red>div:nth-child(2):before{
+    content: '';
+}
+.purple>div:first-child{
+    font-size: 0.9rem;
+}
+.gift_main{
+    width: 100%;
+    height: 100%;
+}
+.gift_header{
+    width: 100%;
+    height: 35%;
+    background: url("images/eggModal/giftheader.png") no-repeat center;
+    background-size: contain;
+    margin-top: 5%;
+    position: relative;
+}
+.gift_header>div:first-child{
+    position: absolute;
+    color: darkgray;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    left:50%;
+    font-size: 0.8rem;
+    text-align: center;
+}
+.gift_header>div:first-child>span{
+    color: red;
+    font-size: 0.9rem;
+}
+.gift_header>div:nth-child(2) {
+    position: absolute;
+    color: #FEE861;
+    top: 50%;
+    transform: translate(-50%, 115%);
+    left: 50%;
+    font-size: 0.6rem;
+    text-align: center;
+}
+.gift_header>div:nth-child(2)>span{
+    color: white;
+}
+.gift_body{
+    position: relative;
+    width: 100%;
+    height: 60%;
+}
+.gift_body>div:first-child{
+    position: absolute;
+    color: rgba(255,255,255,0.8);
+    transform: translateX(-50%);
+    left:50%;
+    font-size: 0.7rem;
+    text-align: center;
+    width: 85%;
+    height: 20%;
+    border-bottom: 0.02rem rgba(255,255,255,0.8) dashed;
+}
+.gift_body>div:first-child>span{
+    color: #E8BB3A;
+}
+.gift_body>div:nth-child(2){
+    position: absolute;
+    color: rgba(255,255,255,0.8);
+    transform: translateX(-50%);
+    left: 50%;
+    text-align: center;
+    top: 23%;
+    width: 85%;
+    font-size: 0.6rem;
+}
+.gift_body>img{
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    left:50%;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 0.2rem;
+    background-color: white;
+}
+.gift_btn{
+    position: absolute;
+    top: 75%;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    color: rgba(255,255,255,0.8);
+    font-size: 1.4rem;
+}
+.state:before{
+    content: '温馨提示';
+}
+.showPresent_body>div:first-child{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+.showPresent_body>div:nth-child(2){
+    width: 95%;
+    height: 3rem;
+    background-color: #C3B39C;
+    margin: auto auto 0.5rem;
+}
+.showPresent_body>div:nth-child(3){
+    text-align: center;
+}
+.showPresent_body>div:first-child>div{
+    width: 95%;
+    height: 2.5rem;
+    display: flex;
+    flex-flow: nowrap row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    border-bottom: 0.02rem grey solid;
+}
+.showPresent_text{
+    width: 60%;
+    height: 2.5rem;
+    text-align: left;
+    line-height: 2.5rem;
+    color: grey;
+}
+
+.typeblue{
+    width: 2rem;
+    height: 2rem;
+    background: url("images/eggModal/typeblue.png") no-repeat center;
+    background-size: contain;
+}
+.typegreen{
+    width: 2rem;
+    height: 2rem;
+    background: url("images/eggModal/typegreen.png") no-repeat center;
+    background-size: contain;
+}
+.typered{
+    width: 2rem;
+    height: 2rem;
+    background: url("images/eggModal/typered.png") no-repeat center;
+    background-size: contain;
+}
+.typepurple{
+    width: 2rem;
+    height: 2rem;
+    background: url("images/eggModal/typepurple.png") no-repeat center;
+    background-size: contain;
+}
+.typeblack{
+    width: 2rem;
+    height: 2rem;
+    background: url("images/eggModal/typeblack.png") no-repeat center;
+    background-size: contain;
+}
+.typeno{
+    width: 2rem;
+    height: 2rem;
+    background: url("images/eggModal/typeno.png") no-repeat center;
+    background-size: contain;
+}
